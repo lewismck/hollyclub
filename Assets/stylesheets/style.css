@@ -105,7 +105,7 @@ h1{
 	font-size: 32px;
 }
 a{
-	color: #B4DFFC;
+	color: #FFF;
 }
 a:hover{
 	color: #92B5CC;
@@ -115,14 +115,27 @@ a:hover{
 Layout
 ==================
 */
+.header{
+		background: url("images/header.jpg") center top no-repeat;
+}
+body{
+	background: url("images/containerbg.jpg") center top;
+}
+.calendar{
+	float: left;
+}
+.form{
+	float: right;
+}
 .form-container{
 	align: center;
 	width: 100%;
-	padding-top: 1%;
+	height: 450px;
+	padding-top: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-bottom: 1%;
-	background: rgba(49, 63, 72, .8);
+	background: rgba(218, 218, 218, .8);
 }
 div{
 	width: 100%;
@@ -132,15 +145,15 @@ div{
 	padding-bottom: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
-	background: rgba(49, 63, 72, .8);
+	background: rgba(218, 218, 218, .8);
 }
 /*
 ==================
-Layout
+Buttons
 ==================
 */
 .btn{
-	border: 1px solid #B4DFFC;
+	border: 1px solid #FFF;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 2px;
