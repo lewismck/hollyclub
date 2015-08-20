@@ -120,8 +120,8 @@ Layout
 		background: url("images/header.jpg") center top no-repeat;
 }
 body{
-	background: url("images/containerbg.jpg") center top;
-	background-color: rgb(43, 168, 43);
+	background: url("images/containerbg.jpg") center top repeat-x;
+	background-color: rgb(43, 168, 43); /*Change to actual grass colour*/
 }
 .calendar{
 	float: left;
