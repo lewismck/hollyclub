@@ -124,7 +124,7 @@ body{
 	background-color: rgb(118, 182, 43); /*Change to actual grass colour*/
 	min-width: 550px;
 }
-@media screen and (min-width:800px){
+@media screen and (min-width:900px){
 .calendar{
 	float: left;
 }
@@ -143,10 +143,10 @@ iframe{
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-bottom: 1%;
-	background: rgba(218, 218, 218, .8);
+	
 }
 }
-@media screen and (max-width:799px){
+@media screen and (max-width:899px){
 .header{
 	width: 100%;
 	float: center;
@@ -170,7 +170,7 @@ iframe{
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-bottom: 1%;
-	background: rgba(218, 218, 218, .8);
+	
 }
 }
 div{
