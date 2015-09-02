@@ -103,13 +103,31 @@ body{
 h1{
 	align: center;
 	font-size: 32px;
-	color: #89B18B;
+	/*color: #89B18B;*/
+	color: rgb(37, 107, 19);
+	text-decoration: underline;
+}
+h2{
+	font-size: 20px;
+	color: white;
 }
 a{
 	color: #FFF;
 }
 a:hover{
-	color: #92B5CC;
+	color: black;
+}
+p{
+	color: white;
+}
+.whiteText{
+	color: white;
+	border: 1px solid black;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	background: rgba(156, 153, 161, .7);
 }
 /*
 ==================
@@ -118,11 +136,24 @@ Layout
 */
 .header{
 	background: url("images/header.jpg") center top no-repeat;
+	background: -webkit-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* Standard syntax */
+}
+img{
+	align: center;
+}
+.container{
+	align: center;
 }
 body{
-	background: url("images/containerbg.jpg") center top repeat-x;
-	background-color: rgb(118, 182, 43); /*Change to actual grass colour*/
+	background-color: rgb(118, 182, 43); /*Change to actual grass colour off-white rgba(218, 218, 218, .8)*/
 	min-width: 550px;
+}
+.content{
+	background: url("images/hbg.png") center top repeat-x;
+	/*padding-top: 158px;*/
 }
 @media screen and (min-width:900px){
 .calendar{
@@ -181,7 +212,8 @@ div{
 	padding-bottom: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
-	background: rgba(218, 218, 218, .8);
+	background: rgba(156, 153, 161, .7);
+	border: 1px solid black;
 }
 /*
 ==================
@@ -196,5 +228,6 @@ Buttons
 	padding-right: 2px;
 }
 .btn:hover{
-	border: 1px solid #92B5CC;
+	background-color: white;
+	border: 1px solid black;
 }
