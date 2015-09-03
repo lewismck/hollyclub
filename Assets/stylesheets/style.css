@@ -127,7 +127,7 @@ p{
 	padding-bottom: 1%;
 	padding-left: 1%;
 	padding-right: 1%;
-	background: rgba(156, 153, 161, .7);
+	background: rgba(133, 188, 252, .8);
 }
 /*
 ==================
@@ -140,16 +140,18 @@ Layout
 	background: -o-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* Standard syntax */
+	min-width:550px;
 }
 img{
 	align: center;
+	
 }
 .container{
 	align: center;
 }
 body{
 	background-color: rgb(118, 182, 43); /*Change to actual grass colour off-white rgba(218, 218, 218, .8)*/
-	min-width: 550px;
+	min-width: 500px;
 }
 .content{
 	background: url("images/hbg.png") center top repeat-x;
@@ -157,14 +159,14 @@ body{
 }
 @media screen and (min-width:900px){
 .calendar{
-	float: left;
+	float: center;
 }
 .form{
-	float: right;
+	float: center;
 }
 iframe{
-	width: 550px;
-	height: 550px;
+	width: 90%;
+	height: 750px;
 }
 .form-container{
 	align: center;
@@ -182,6 +184,9 @@ iframe{
 	width: 100%;
 	float: center;
 }
+img{
+	max-width:550px;
+}
 .calendar{
 	float: center;
 	height: 600px;
@@ -191,12 +196,13 @@ iframe{
 	height: 600px;
 }
 iframe{
+	width: 85%;
 	height: 550px;
 }
 .form-container{
 	align: center;
 	width: 100%;
-	height: 1280px;
+	height: 800px;
 	padding-top: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
@@ -212,7 +218,7 @@ div{
 	padding-bottom: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
-	background: rgba(156, 153, 161, .7);
+	background: rgba(133, 188, 252, .8);
 	border: 1px solid black;
 }
 /*
