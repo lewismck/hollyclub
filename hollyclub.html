@@ -7,53 +7,9 @@
 	<link rel="stylesheet" href="assets/stylesheets/style.css">
 	<link rel="shortcut icon" href="http://www.elhamprimary.co.uk/favicon.ico" type="image/x-icon"/>
 	
-	<script>
-	function populateStorage(id, value){
-		localStorage.setItem(id, value);
-	}
-	
-	function checkPreference(){
-		if(!localStorage.getItem('formItem')){
-			populateStorage('formItem', 'cal');
-		}
-		if(localStorage.getItem('formItem') == 'cal'){
-			//method to set calendar on page
-			setCal();
-		}
-		if(localStorage.getItem('formItem') == 'form'){
-			//method to set form on page
-			setForm();
-		}
-	}
-	
-	//lazy code but fits the UI design
-	function setCal(){
-		var cal = [
-		'<section class="calendar">',
-		'		<p class="whiteText">Here are the bookings:<p>',
-		'		<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=g5j01cjf5mg2nbch8r0r1d8s78%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FLondon" style=" border:solid 1px #777 " width="500" height="350" frameborder="0" scrolling="no"></iframe>',
-		'	</section>'
-		].join('');
-		
-		populateStorage('formItem', 'cal');
-		document.getElementById('formContainer').innerHTML = cal;
-	}
-	
-	function setForm(){
-		var form = [
-		'<section class="form">',
-		'		<p class="whiteText">Complete this form to book:<p>',
-		'		<iframe src="https://docs.google.com/forms/d/1yU395r48chSvXm0U1Ys4ucAe_lSaDbuI-k7Be8OnXfU/viewform?embedded=true" style=" border:solid 1px #777 " width="500" height="350" frameborder="0" marginheight="0" marginwidth="0">form</iframe>',
-		'	</section>'
-		].join('');
-		
-		populateStorage('formItem', 'form');
-		document.getElementById('formContainer').innerHTML = form;
-	}
-	
-	</script>
+	<script src="script.js" type="text/javascript"></script>
 </head>
-<body onload="checkPreference()">
+<body onload="checkRegistered()">
 	
 <section class="header">
 	<section class="container">
@@ -72,12 +28,12 @@
 			Complete the form to book up to two weeks in advance for Holly Club.<br>
 			You will recieve a text notification to confirm your booking.</h2>
 		<br>
-		<a onclick="setCal()" title="show the calendar" class="btn">Show Calendar</a>   <a onclick="setForm()" title="show the form" class="btn">Show Form</a>
+		<a onclick="setCal()" title="show the calendar" class="btn">Show Calendar</a>   <a onclick="setForm()" title="show the form" class="btn">Registration Form</a> <a class="btn" title="show sign up form" onclick="setSignUp">Sign Up Form</a>
 		<br>
 		<br>
-		<p>open the form in a new page:</p>
+		<p>open the forms in a new page:</p>
 		<br>
-		<a href="http://goo.gl/forms/79joD5OtSw" target="_blank" class="btn">Bookings</a>
+		<a href="http://goo.gl/forms/79joD5OtSw" target="_blank" class="btn">Registration</a>  <a class="btn" href="http://goo.gl/forms/XgFNWQMNgL" target="_blank">Sign Up</a>
 		<br>
 	</div>
 	<br>
