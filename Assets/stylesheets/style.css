@@ -144,18 +144,28 @@ Layout
 }
 img{
 	align: center;
-	
 }
 .container{
 	align: center;
 }
 body{
-	background-color: rgb(118, 182, 43); /*Change to actual grass colour off-white rgba(218, 218, 218, .8)*/
+	/background-color: rgb(118, 182, 43); /*actual grass colour off-white rgba(218, 218, 218, .8)*/
 	min-width: 500px;
 }
 .content{
-	background: url("images/hbg.png") center top repeat-x;
+	/*background: url("images/hbg.png") center top repeat-x;*/
+	background: -webkit-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* Standard syntax */
 	/*padding-top: 158px;*/
+}
+.fade {
+    background: -webkit-linear-gradient(left, 
+                rgba(255,255,255,0.65) 80%, 
+
+                rgba(255,255,255,0.65) 100%
+    );
 }
 @media screen and (min-width:900px){
 .calendar{
@@ -232,8 +242,9 @@ Buttons
 	padding-bottom: 10px;
 	padding-left: 2px;
 	padding-right: 2px;
+	cursor: pointer;
 }
 .btn:hover{
-	background-color: white;
+	background-color: rgba(255,255,255,.5);
 	border: 1px solid black;
 }

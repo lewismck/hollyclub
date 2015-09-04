@@ -1,3 +1,14 @@
+	//Greater scope since it's used twice
+	var signUp = [
+		'<section class="form">',
+		'		<p class="whiteText">If you haven"t registered, please do so before booking your child into Holly Club',
+		'<br>',
+		'<br><a class="btn" onclick="amRegistered()">Already Registered</a><br>',
+		'</p>',
+		'		<iframe src="https://docs.google.com/forms/d/10hIrmJoZ5X8FpNiRUw8p4SGhUCQdBnp_XCtTsfoUUWU/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>',
+		'	</section>'
+	].join('');
+	
 	//Method to fill local storage.
 	function populateStorage(id, value){
 		localStorage.setItem(id, value);
@@ -5,15 +16,7 @@
 	
 	//check to see if they've completed the initial sign up
 	function checkRegistered(){
-		var signUp = [
-		'<section class="form">',
-		'		<p class="whiteText">If you haven"t registered, please do so before booking your child into Holly Club',
-		'<br>',
-		'<br><a class="btn" onclick="amRegistered()">Already Registered</a>',
-		'</p>',
-		'		<iframe src="https://docs.google.com/forms/d/10hIrmJoZ5X8FpNiRUw8p4SGhUCQdBnp_XCtTsfoUUWU/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>',
-		'	</section>'
-		].join('');
+		
 		
 		if(!localStorage.getItem('registered')){
 			document.getElementById('formContainer').innerHTML = signUp;
@@ -29,16 +32,8 @@
 		location.reload();
 	}
 	
+	//set the sign up form in the UI
 	function setSignUp(){
-		var signUp = [
-		'<section class="form">',
-		'		<p class="whiteText">If you haven"t registered, please do so before booking your child into Holly Club',
-		'<br>',
-		'<br><a class="btn" onclick="amRegistered()">Already Registered</a>',
-		'</p>',
-		'		<iframe src="https://docs.google.com/forms/d/10hIrmJoZ5X8FpNiRUw8p4SGhUCQdBnp_XCtTsfoUUWU/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>',
-		'	</section>'
-		].join('');
 		
 		document.getElementById('formContainer').innerHTML = signUp;
 	}
