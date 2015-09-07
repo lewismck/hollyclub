@@ -1,11 +1,11 @@
 	//Greater scope since it's used twice
 	var signUp = [
 		'<section class="form">',
-		'		<p class="whiteText">If you haven"t registered, please do so before booking your child into Holly Club',
+		'		<p class="whiteText">If you haven"t signed up, please do so before booking your child into Holly Club',
 		'<br>',
-		'<br><a class="btn" onclick="amRegistered()">Already Registered</a><br>',
+		'<br><a class="btn" onclick="amRegistered()">Already Signed Up</a><br>',
 		'</p>',
-		'		<iframe src="https://docs.google.com/forms/d/10hIrmJoZ5X8FpNiRUw8p4SGhUCQdBnp_XCtTsfoUUWU/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>',
+		'		<iframe src="https://docs.google.com/forms/d/10hIrmJoZ5X8FpNiRUw8p4SGhUCQdBnp_XCtTsfoUUWU/viewform?embedded=true" width="760" height="500" style="border:solid 1px #777" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>',
 		'	</section>'
 	].join('');
 	
