@@ -177,6 +177,7 @@ body{
                 rgba(255,255,255,0.65) 100%
     );
 }
+/*Desktop width*/
 @media screen and (min-width:900px){
 .calendar{
 	float: center;
@@ -199,6 +200,7 @@ iframe{
 	
 }
 }
+/*Mobile width*/
 @media screen and (max-width:899px){
 .header{
 	width: 100%;
