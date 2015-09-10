@@ -103,26 +103,134 @@ body{
 h1{
 	align: center;
 	font-size: 32px;
+	/*color: #89B18B;*/
+	color: rgb(37, 107, 19);
+	text-decoration: underline;
+}
+h2{
+	font-size: 20px;
+	color: white;
 }
 a{
-	color: #B4DFFC;
+	color: #FFF;
 }
 a:hover{
-	color: #92B5CC;
+	color: black;
+}
+p{
+	color: white;
+}
+.whiteText{
+	color: white;
+	border: 1px solid black;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	background: rgba(133, 188, 252, .8);
 }
 /*
 ==================
 Layout
 ==================
 */
+.header{
+	background: url("images/header.jpg") center top no-repeat;
+	background: -webkit-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* Standard syntax */
+	min-width:550px;
+}
+img{
+	align: center;
+}
+.container{
+	align: center;
+}
+body{
+	/*background-color: rgb(118, 182, 43); /*actual grass colour off-white rgba(218, 218, 218, .8)*/
+	min-width: 500px;
+}
+.content{
+	/*background: url("images/hbg.png") center top repeat-x;*/
+	/*ADD EXTRA WHITE SECTION AT START OF GRADIENT?*/
+	background: -webkit-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* Standard syntax */
+	/*padding-top: 158px;*/
+}
+.footer{
+	padding-top: 150px;
+    border-bottom: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+.fade {
+    background: -webkit-linear-gradient(left, 
+                rgba(255,255,255,0.65) 80%, 
+
+                rgba(255,255,255,0.65) 100%
+    );
+}
+/*Desktop width*/
+@media screen and (min-width:900px){
+.calendar{
+	float: center;
+}
+.form{
+	float: center;
+}
+iframe{
+	width: 80%;
+	height: 750px;
+}
 .form-container{
 	align: center;
 	width: 100%;
-	padding-top: 1%;
+	height: 720px;
+	padding-top: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-bottom: 1%;
-	background: rgba(49, 63, 72, .8);
+	
+}
+}
+/*Mobile width*/
+@media screen and (max-width:899px){
+.header{
+	width: 100%;
+	float: center;
+}
+img{
+	max-width:550px;
+}
+.calendar{
+	float: center;
+	height: 600px;
+}
+.form{
+	float: center;
+	height: 600px;
+}
+iframe{
+	width: 85%;
+	height: 550px;
+}
+.form-container{
+	align: center;
+	width: 100%;
+	height: 720px;
+	padding-top: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	
+}
 }
 div{
 	width: 100%;
@@ -132,20 +240,23 @@ div{
 	padding-bottom: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
-	background: rgba(49, 63, 72, .8);
+	background: rgba(133, 188, 252, .8);
+	border: 1px solid black;
 }
 /*
 ==================
-Layout
+Buttons
 ==================
 */
 .btn{
-	border: 1px solid #B4DFFC;
+	border: 1px solid #FFF;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 2px;
 	padding-right: 2px;
+	cursor: pointer;
 }
 .btn:hover{
-	border: 1px solid #92B5CC;
+	background-color: rgba(255,255,255,.5);
+	border: 1px solid black;
 }
