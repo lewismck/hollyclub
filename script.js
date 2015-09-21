@@ -1,13 +1,13 @@
 	//Greater scope since it's used twice
-	var signUp = [
-		'<section class="form">',
-		'		<p class="whiteText">If you haven"t signed up, please do so before booking your child into Holly Club',
-		'<br>',
-		'<br><a class="btn" onclick="amRegistered()">Already Signed Up</a><br>',
-		'</p>',
-		'		<iframe src="https://docs.google.com/forms/d/10hIrmJoZ5X8FpNiRUw8p4SGhUCQdBnp_XCtTsfoUUWU/viewform?embedded=true" width="760" height="500" style="border:solid 1px #777" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>',
-		'	</section>'
-	].join('');
+var signUp = [
+'<section class="form">',
+'			<p class="whiteText">If you haven"t signed up, please do so before booking your child into After School Club:',
+'	<br>',
+'<br><a class="btn buttonA" onclick="amRegistered()">Already Signed Up</a><br><br>',
+'</p>',
+'		<iframe src="https://docs.google.com/forms/d/10hIrmJoZ5X8FpNiRUw8p4SGhUCQdBnp_XCtTsfoUUWU/viewform?embedded=true" width="300" height="350" style="border:solid 1px #777" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>',
+'</section>'
+].join('');
 	
 	//Method to fill local storage.
 	function populateStorage(id, value){
@@ -57,10 +57,9 @@
 	function setCal(){
 		var cal = [
 		'<section class="calendar">',
-		'<p class="whiteText">Here are the days available for after school club</p>',
-		'<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=afterschoolelham%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>',
-		'</section>',
-		''
+		'			<p class="whiteText">Here are the days available for After School Club</p>',
+		'			<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=afterschoolelham%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>',
+		'			</section>'
 		].join('');
 		
 		populateStorage('formItem', 'cal');
@@ -71,9 +70,9 @@
 	function setForm(){
 		var form = [
 		'<section class="form">',
-		'		<p class="whiteText">Complete this form to book up to two weeks in advance for Holly Club:<p>',
-		'		<iframe src="https://docs.google.com/forms/d/1yU395r48chSvXm0U1Ys4ucAe_lSaDbuI-k7Be8OnXfU/viewform?embedded=true" style=" border:solid 1px #777 " width="500" height="350" frameborder="0" marginheight="0" marginwidth="0">form</iframe>',
-		'	</section>'
+		'			<p class="whiteText">Complete this form to book up to two weeks in advance for After School Club:<p>',
+		'				<iframe src="https://docs.google.com/forms/d/1yU395r48chSvXm0U1Ys4ucAe_lSaDbuI-k7Be8OnXfU/viewform?embedded=true" style=" border:solid 1px #777 " width="500" height="350" frameborder="0" marginheight="0" marginwidth="0">form</iframe>',
+		'		</section>'
 		].join('');
 		
 		populateStorage('formItem', 'form');
