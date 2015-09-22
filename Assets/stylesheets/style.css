@@ -99,10 +99,11 @@ Typography
 body{
 	font: 300 16px/22px "lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	min-width: 500px;
+	background: url("images/field.jpg") center repeat-y;
 }
 h1{
 	align: center;
-	font-size: 32px;
+	font-size: 38px;
 	/*color: #89B18B;
 	color: rgb(37, 107, 19);*/
 	color: black;
@@ -150,28 +151,34 @@ Layout
 ==================
 */
 .header{
+	/*
 	background: url("images/header.jpg") center top no-repeat;
-	background: -webkit-linear-gradient(rgb(3, 204, 255),20% rgb(146, 234, 255),80%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* Standard syntax */
+	background: -webkit-linear-gradient(rgb(3, 204, 255),20% rgb(146, 234, 255),80%); /* For Safari 5.1 to 6.0 
+	background: -o-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Opera 11.1 to 12.0 
+	background: -moz-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Firefox 3.6 to 15 
+	background: linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* Standard syntax 
 	min-width:550px;
+	*/
 }
 img{
 	align: center;
-	border-bottom: 2px solid white;
-	border-radius: 4px;
+	height: 100px;
+	width: 100px;
+}
+.imgSmall{
+	height: 25px;
+	width: 25px;
 }
 .container{
 	align: center;
 }
 .content{
-	/*background: url("images/hbg.png") center top repeat-x;*/
-	/*ADD EXTRA WHITE SECTION AT START OF GRADIENT?*/
-	background: -webkit-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* Standard syntax */
+	/*background: url("images/hbg.png") center top repeat-x;
+	/*ADD EXTRA WHITE SECTION AT START OF GRADIENT?
+	background: -webkit-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Safari 5.1 to 6.0 
+	background: -o-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Opera 11.1 to 12.0 
+	background: -moz-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Firefox 3.6 to 15 
+	background: linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* Standard syntax 
 	/*padding-top: 158px;*/
 }
 .main{
@@ -181,22 +188,14 @@ img{
 	padding-bottom: 1%;
 }
 .footer{
-	padding-top: 150px;
-    border-bottom: 2px solid rgba(0,0,0,.5);
-    width: 25%;
+	padding-top: 100px;
+    border-bottom: 4px solid rgba(0,0,0,.5);
+    width: 33%;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
 }
-.fade {
-    background: -webkit-linear-gradient(left, 
-                rgba(255,255,255,0.65) 80%, 
-
-                rgba(255,255,255,0.65) 100%
-    );
-}
-
 /*Desktop width*/
 @media screen and (min-width:900px){
 .calendar{
@@ -206,7 +205,7 @@ img{
 	float: center;
 }
 iframe{
-	width: 80%;
+	width: 70%;
 	height: 620px;
 }
 .form-container{
@@ -241,7 +240,7 @@ img{
 	height: 600px;
 }
 iframe{
-	width: 85%;
+	width: 75%;
 	height: 550px;
 }
 .form-container{
@@ -322,16 +321,5 @@ button {
 	
 .btn:hover{
 	background-color: rgba(255,255,255,.7);
-	border: 1px solid black;
-	  -webkit-transition: top 0.09s ease-in;
-}
-.feedbutton{
-	border: 1px solid black;
-	padding: 5px 2px 5px 2px;
-	color: black;
-}
-.feedbutton:hover{
-	background-color: rgba(0,0,0,.5);
-	color: white;
 	border: 1px solid black;
 }
