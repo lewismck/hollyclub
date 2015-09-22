@@ -16,8 +16,6 @@ var signUp = [
 	
 	//check to see if they've completed the initial sign up
 	function checkRegistered(){
-		
-		
 		if(!localStorage.getItem('registered')){
 			document.getElementById('formContainer').innerHTML = signUp;
 		}
@@ -34,7 +32,6 @@ var signUp = [
 	
 	//set the sign up form in the UI
 	function setSignUp(){
-		
 		document.getElementById('formContainer').innerHTML = signUp;
 	}
 	
