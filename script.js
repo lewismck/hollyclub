@@ -1,7 +1,7 @@
 	//Greater scope since it's used twice
 var signUp = [
 '<section class="form">',
-'			<p class="whiteText">If you haven"t signed up, please do so before booking your child into After School Club:',
+'			<p class="whiteText">If you have not signed up, please do so before booking your child into After School Club:',
 '	<br>',
 '<br><a class="btn buttonA" onclick="amRegistered()">Already Signed Up</a><br><br>',
 '</p>',
@@ -54,7 +54,7 @@ var signUp = [
 	function setCal(){
 		var cal = [
 		'<section class="calendar">',
-		'			<p class="whiteText">Here are the days available for After School Club</p>',
+		'			<p class="whiteText">Here are the days available for After School Club:</p>',
 		'			<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=afterschoolelham%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>',
 		'			</section>'
 		].join('');
