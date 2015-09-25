@@ -97,86 +97,138 @@ Typography
 ==================
 */
 body{
-	font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	
+	font: 300 16px/22px "lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-width: 500px;
+	background: url("images/field.jpg") center repeat-y;
 }
 h1{
 	align: center;
-	font-size: 32px;
-	/*color: #89B18B;*/
-	color: rgb(37, 107, 19);
+	font-size: 38px;
+	color: black;
 	text-decoration: underline;
 }
 h2{
+	font-size: 24px;
+	color: #2F2F2F;
+}
+h3{
 	font-size: 20px;
-	color: white;
+	color: #2F2F2F;
 }
 a{
-	color: #FFF;
+	color: black;
 }
-a:hover{
+.feedA{
+	color: black;
+}
+.feedA:hover{
+	color: white;
+}
+.buttonA{
+	color: white;
+}
+.buttonA:hover{
 	color: black;
 }
 p{
-	color: white;
+	color: #2F2F2F;
 }
 .whiteText{
 	color: white;
 	border: 1px solid black;
+	border-radius: 4px;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	padding-left: 1%;
 	padding-right: 1%;
-	background: rgba(133, 188, 252, .8);
+	background: rgba(47, 47, 52, .5);
 }
 /*
 ==================
 Layout
 ==================
 */
-.header{
-	background: url("images/header.jpg") center top no-repeat;
-	background: -webkit-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(rgb(3, 204, 255), rgb(146, 234, 255)); /* Standard syntax */
-	min-width:550px;
-}
 img{
 	align: center;
+	height: 100px;
+	width: 100px;
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+img:hover{
+    -ms-transform: scale(1.2,1.2) rotate(45deg); /* IE 9 */
+       -webkit-transform: scale(1.2,1.2) rotate(45deg); /* Safari */
+       transform: scale(1.2,1.2) rotate(45deg);
+}
+.imgSmall{
+	height: 25px;
+	width: 25px;
 }
 .container{
 	align: center;
 }
-body{
-	/*background-color: rgb(118, 182, 43); /*actual grass colour off-white rgba(218, 218, 218, .8)*/
-	min-width: 500px;
-}
-.content{
-	/*background: url("images/hbg.png") center top repeat-x;*/
-	/*ADD EXTRA WHITE SECTION AT START OF GRADIENT?*/
-	background: -webkit-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(rgb(146, 234, 255) 15%, white 80%); /* Standard syntax */
-	/*padding-top: 158px;*/
+.main{
+	
+	border-radius: 4px;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 .footer{
-	padding-top: 150px;
-    border-bottom: 2px solid black;
-    width: 25%;
+	padding-top: 100px;
+    border-bottom: 4px solid rgba(0,0,0,.5);
+    width: 33%;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
 }
-.fade {
-    background: -webkit-linear-gradient(left, 
-                rgba(255,255,255,0.65) 80%, 
 
-                rgba(255,255,255,0.65) 100%
-    );
+/*keyFrames fade in*/
+.form-container{
+    animation: fadein 2.1s;
+    -moz-animation: fadein 2.1s; /* Firefox */
+    -webkit-animation: fadein 2.1s; /* Safari and Chrome */
+    -o-animation: fadein 2.1s; /* Opera */
 }
+iframe{
+    animation: fadein 1.7s;
+    -moz-animation: fadein 1.7s; /* Firefox */
+    -webkit-animation: fadein 1.7s; /* Safari and Chrome */
+    -o-animation: fadein 1.7s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /*Desktop width*/
 @media screen and (min-width:900px){
 .calendar{
@@ -186,20 +238,24 @@ body{
 	float: center;
 }
 iframe{
-	width: 80%;
-	height: 750px;
+	width: 100%;
+	height: 620px;
 }
 .form-container{
 	align: center;
 	width: 100%;
-	height: 720px;
+	height: 620px;
 	padding-top: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-bottom: 1%;
 	
+	-webkit-transition: iframe 0.8s ease-in;
+	transition: iframe 0.8s ease-in;
+	transition-duration: 2s;
 }
 }
+
 /*Mobile width*/
 @media screen and (max-width:899px){
 .header{
@@ -218,17 +274,21 @@ img{
 	height: 600px;
 }
 iframe{
-	width: 85%;
+	width: 100%;
 	height: 550px;
 }
 .form-container{
 	align: center;
 	width: 100%;
-	height: 720px;
+	height: 600px;
 	padding-top: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-bottom: 1%;
+	
+	-webkit-transition: iframe 0.8s ease-in;
+	transition: iframe 0.8s ease-in;
+	transition-duration: 2s;
 	
 }
 }
@@ -236,27 +296,65 @@ div{
 	width: 100%;
 	align: center;
 	text-align: center;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	padding-left: 1%;
-	padding-right: 1%;
+	padding: 2% 1% 2% 1%;
 	background: rgba(133, 188, 252, .8);
-	border: 1px solid black;
+
 }
 /*
 ==================
 Buttons
 ==================
 */
+/*Transition*/
+button {
+  position: relative;
+  //display:block;
+  width: 100px;
+  padding: 10px 2px 10px 2px;
+  color: black;
+  font-size: 15px;
+  text-decoration: underline;
+  border: 1px black solid;
+  border-radius: 4px;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+.fill:hover {
+  color: black;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
+}
+/*No transition*/
 .btn{
-	border: 1px solid #FFF;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 2px;
-	padding-right: 2px;
+	border: 1px solid white;
+	padding: 10px 2px 10px 2px;
+	border-radius: 4px;
 	cursor: pointer;
 }
+	
 .btn:hover{
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(255,255,255,.7);
 	border: 1px solid black;
 }
