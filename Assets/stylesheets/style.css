@@ -155,6 +155,12 @@ img{
 	-webkit-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
+#enter{
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
 img:hover{
     -ms-transform: scale(1.2,1.2) rotate(45deg); /* IE 9 */
        -webkit-transform: scale(1.2,1.2) rotate(45deg); /* Safari */
